@@ -16,9 +16,9 @@ public class clsControllerUserSvr {
 
     public clsControllerUserSvr(IUserRepository prmIUserRepository, IRoleRepository prmIRoleRepository) {
         attIUserRepository = prmIUserRepository;
-        attIRoleRepository = prmIRoleRepository;
+        attIRoleRepository = prmIRoleRepository; 
     }
-
+    //Podemos hacer comentarios inecesarios
     @GetMapping 
     public List<clsUser> opListAll() {
         return attIUserRepository.findAll();
