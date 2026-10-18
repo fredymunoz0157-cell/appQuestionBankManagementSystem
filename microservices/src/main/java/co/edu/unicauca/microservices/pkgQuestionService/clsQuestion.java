@@ -51,12 +51,15 @@ public class clsQuestion {
     @Column(name = "question_difficultylevel")
     private Integer attDifficultyLevel;
 
+    @Column (name = "question_user")
+    private String attQuestionUser;
+
     public clsQuestion() {
     }
 
     public clsQuestion(String prmOUID, String prmContext, String prmDirectQuestion, Set<String> prmDistractors,
             String prmRightAnswer, String prmJustification, String prmBibliography, String prmCompetence,
-            String prmTopic, String prmSubTopic, Integer prmDifficultyLevel) {
+            String prmTopic, String prmSubTopic, Integer prmDifficultyLevel, String prmQuestionUser) {
         attOUID = prmOUID;
         attContext = prmContext;
         attDirectQuestion = prmDirectQuestion;
@@ -68,6 +71,7 @@ public class clsQuestion {
         attTopic = prmTopic;
         attSubTopic = prmSubTopic;
         attDifficultyLevel = prmDifficultyLevel;
+        attQuestionUser=prmQuestionUser;
     }
 
 }
